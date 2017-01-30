@@ -1,0 +1,2949 @@
+@region (region_id/numeric,region_name/char): region_id
+1,'All'
+2,'Goulburn Valley'
+3,'Rutherglen'
+4,'Coonawarra'
+5,'Upper Hunter Valley'
+6,'Lower Hunter Valley'
+7,'Barossa Valley'
+8,'Riverland'
+9,'Margaret River'
+10,'Swan Valley'
+
+@grape_variety (variety_id/numeric,variety/char): variety_id
+1,'Riesling'
+2,'Chardonnay'
+3,'Sauvignon'
+4,'Blanc'
+5,'Semillon'
+6,'Pinot'
+7,'Gris'
+8,'Verdelho'
+9,'Grenache'
+10,'Noir'
+11,'Cabernet'
+12,'Shiraz'
+13,'Merlot'
+14,'Dessert'
+15,'Muscat'
+16,'Sherry'
+17,'Port'
+18,'Champagne'
+19,'Sparkling'
+20,'Red'
+21,'White'
+
+@wine (wine_id/numeric,wine_name/char,wine_type/numeric,year/numeric,winery_id/numeric,description/char):  wine_id
+1,'Archibald',2,1997,1,NULL
+2,'Pattendon',3,1975,1,NULL
+3,'Lombardi',4,1985,2,NULL
+4,'Tonkin',2,1984,2,NULL
+5,'Titshall',5,1986,2,NULL
+6,'Serrong',6,1995,2,NULL
+7,'Mettaxus',5,1996,2,NULL
+8,'Titshall',4,1987,3,NULL
+9,'Serrong',3,1981,3,NULL
+10,'Chester',5,1999,3,NULL
+11,'Chemnis',2,1980,3,NULL
+12,'Holdenson',6,1979,4,NULL
+13,'Skerry',2,1975,4,NULL
+14,'Pattendon',5,1978,4,NULL
+15,'Titshall',3,1999,4,NULL
+16,'Belcombe',3,1998,4,NULL
+17,'Dimitria',5,1981,5,NULL
+18,'Titshall',5,1977,5,NULL
+19,'Holdenson',4,1986,6,NULL
+20,'Sears',2,1999,6,NULL
+21,'Sorrenti',3,1970,6,NULL
+22,'Belcombe',3,1972,7,NULL
+23,'Sears',4,1986,8,NULL
+24,'Kinsala',3,1985,8,NULL
+25,'Skerry',5,1973,8,NULL
+26,'Keisling',6,1973,8,NULL
+27,'Mellaseca',6,1973,8,NULL
+28,'Keisling',6,1985,8,NULL
+29,'Chester',2,1983,9,NULL
+30,'Nancarral',5,1988,9,NULL
+31,'Mockridge',6,1970,9,NULL
+32,'Dimitria',6,1977,9,NULL
+33,'Barneshaw',2,1973,10,NULL
+34,'Lombardi',4,1985,10,NULL
+35,'Chester',4,1970,10,NULL
+36,'Mettaxus',2,1971,10,NULL
+37,'Stribling',6,1975,10,NULL
+38,'Tonkin',6,1986,10,NULL
+39,'Sears',3,1975,11,NULL
+40,'Rosenthal',5,1981,12,NULL
+41,'Florenini',6,1998,13,NULL
+42,'Mettaxus',3,1982,13,NULL
+43,'Pattendon',6,1984,14,NULL
+44,'Barneshaw',4,1978,14,NULL
+45,'Ruscina',3,1977,15,NULL
+46,'Marzalla',3,1991,15,NULL
+47,'Marzalla',6,1999,16,NULL
+48,'Lombardi',3,1975,17,NULL
+49,'Oaton',3,1993,17,NULL
+50,'Sears',5,1993,17,NULL
+51,'Mockridge',4,1983,17,NULL
+52,'Tonkin',6,1989,17,NULL
+53,'Triskit',6,1990,18,NULL
+54,'Eggelston',2,1996,18,NULL
+55,'Morfooney',3,1985,18,NULL
+56,'Oaton',3,1980,18,NULL
+57,'Stribling',2,1998,19,NULL
+58,'Florenini',3,1996,19,NULL
+59,'Galti',5,1984,19,NULL
+60,'Serrong',6,1998,20,NULL
+61,'Mockridge',3,1975,20,NULL
+62,'Marzalla',6,1979,20,NULL
+63,'Serrong',2,1970,20,NULL
+64,'Triskit',2,1988,20,NULL
+65,'Sears',3,1971,20,NULL
+66,'Ruscina',5,1975,21,NULL
+67,'Krennan',3,1976,21,NULL
+68,'Mockridge',5,1996,21,NULL
+69,'Holdenson',6,1972,21,NULL
+70,'Taggendharf',3,1974,21,NULL
+71,'Barneshaw',5,1998,22,NULL
+72,'Barneshaw',3,1972,23,NULL
+73,'Nancarral',3,1991,23,NULL
+74,'Ruscina',5,1970,23,NULL
+75,'Tonkin',2,1988,23,NULL
+76,'Ritterman',3,1974,23,NULL
+77,'Marzalla',4,1994,24,NULL
+78,'Dalion',3,1992,24,NULL
+79,'Mellaseca',2,1990,24,NULL
+80,'Leramonth',3,1976,24,NULL
+81,'Kinsala',5,1976,24,NULL
+82,'Oaton',5,1979,24,NULL
+83,'Belcombe',3,1977,25,NULL
+84,'Dalion',4,1971,25,NULL
+85,'Morfooney',5,1989,26,NULL
+86,'Mellili',6,1988,26,NULL
+87,'Mockridge',3,1984,26,NULL
+88,'Dalion',2,1975,26,NULL
+89,'Mellili',5,1980,26,NULL
+90,'Chemnis',6,1990,27,NULL
+91,'Nancarral',6,1987,27,NULL
+92,'Florenini',6,1985,27,NULL
+93,'Stribling',6,1976,28,NULL
+94,'Oaton',5,1972,29,NULL
+95,'Chester',5,1977,29,NULL
+96,'Skerry',3,1976,29,NULL
+97,'Galti',5,1986,29,NULL
+98,'Triskit',6,1987,29,NULL
+99,'Stribling',6,1975,29,NULL
+100,'Titshall',5,1984,30,NULL
+101,'Woodestock',6,1980,30,NULL
+102,'Morfooney',5,1991,30,NULL
+103,'Krennan',2,1984,30,NULL
+104,'Sears',3,1986,30,NULL
+105,'Eggelston',5,1994,30,NULL
+106,'Archibald',3,1971,31,NULL
+107,'Ruscina',2,1971,31,NULL
+108,'Taggendharf',6,1988,32,NULL
+109,'Holdenson',3,1974,32,NULL
+110,'Oaton',6,1975,32,NULL
+111,'Dalion',5,1991,32,NULL
+112,'Nancarral',6,1975,32,NULL
+113,'Sears',5,1971,32,NULL
+114,'Patton',4,1982,33,NULL
+115,'Dalion',6,1982,33,NULL
+116,'Florenini',2,1979,33,NULL
+117,'Patton',6,1996,33,'This is one shot out of the blue! With striking colour, this is a fruit-driven wine, with intense blueberry and blackberry fruit aromas, which carry on to the well crafted, full-flavoured palate, which has great persistence of flavour.'
+118,'Belcombe',5,1976,33,NULL
+119,'Chemnis',3,1988,34,NULL
+120,'Skerry',3,1996,35,NULL
+121,'Holdenson',3,1974,36,NULL
+122,'Stribling',6,1979,36,NULL
+123,'Sorrenti',2,1973,36,NULL
+124,'Titshall',3,1995,36,NULL
+125,'Mockridge',3,1976,37,NULL
+126,'Mettaxus',5,1971,37,NULL
+127,'Belcombe',2,1984,37,NULL
+128,'Taggendharf',6,1982,37,NULL
+129,'Ritterman',6,1998,37,NULL
+130,'Florenini',2,1972,37,NULL
+131,'Mellili',5,1995,38,NULL
+132,'Krennan',4,1995,39,NULL
+133,'Galti',5,1999,39,NULL
+134,'Kinsala',4,1970,39,NULL
+135,'Florenini',5,1989,39,NULL
+136,'Chemnis',5,1998,39,NULL
+137,'Archibald',6,1994,39,NULL
+138,'Morfooney',2,1987,40,NULL
+139,'Woodburne',6,1985,40,NULL
+140,'Galti',5,1979,40,NULL
+141,'Dalion',2,1970,40,NULL
+142,'Eggelston',6,1999,41,NULL
+143,'Belcombe',5,1974,41,NULL
+144,'Mockridge',5,1991,41,NULL
+145,'Mockridge',6,1991,42,NULL
+146,'Galti',5,1990,43,NULL
+147,'Taggendharf',6,1987,44,NULL
+148,'Belcombe',5,1984,44,NULL
+149,'Marzalla',5,1989,44,NULL
+150,'Dimitria',3,1980,45,NULL
+151,'Serrong',5,1970,46,NULL
+152,'Woodburne',2,1986,46,NULL
+153,'Skerry',5,1986,46,NULL
+154,'Florenini',6,1975,46,NULL
+155,'Barneshaw',5,1987,46,NULL
+156,'Pattendon',5,1988,46,NULL
+157,'Lombardi',3,1972,47,NULL
+158,'Tonnibrook',6,1977,47,NULL
+159,'Woodburne',5,1975,47,NULL
+160,'Lombardi',6,1993,47,NULL
+161,'Galti',2,1988,47,NULL
+162,'Mettaxus',2,1994,48,NULL
+163,'Galti',5,1995,48,NULL
+164,'Mellili',2,1990,48,NULL
+165,'Mockridge',2,1999,48,'A very good example of Margaret River chardonnay. Peach and melon scents are followed by a full palate of ripe fruit tastes and a long, dry finish. Chicken dishes, hot or cold, will match it well now or cellar it until 2003.'
+166,'Belcombe',5,1996,49,NULL
+167,'Cassisi',6,1983,49,NULL
+168,'Rosenthal',6,1984,49,NULL
+169,'Barneshaw',2,1989,49,NULL
+170,'Cassisi',2,1988,49,NULL
+171,'Morfooney',6,1979,50,NULL
+172,'Kinsala',6,1970,50,NULL
+173,'Barneshaw',2,1975,50,NULL
+174,'Mettaxus',5,1996,50,NULL
+175,'Titshall',5,1972,51,NULL
+176,'Oaton',2,1984,51,NULL
+177,'Mockridge',5,1992,52,NULL
+178,'Sorrenti',3,1970,52,NULL
+179,'Keisling',6,1982,53,NULL
+180,'Serrong',2,1979,54,NULL
+181,'Ritterman',5,1993,54,NULL
+182,'Belcombe',6,1975,54,NULL
+183,'Chester',4,1980,55,NULL
+184,'Chester',2,1994,55,NULL
+185,'Florenini',6,1983,55,NULL
+186,'Eggelston',6,1988,55,NULL
+187,'Skerry',5,1982,55,NULL
+188,'Krennan',3,1995,55,NULL
+189,'Sorrenti',4,1976,56,NULL
+190,'Sears',5,1991,57,NULL
+191,'Belcombe',6,1997,58,'Rich ruby colour with purple tinges it has a suggestion of peppermint and ripe red berry aromas. Its a biggish wine with a well-structured, richly flavoured palate and firm tannins. Try it with rare beef dishes or cellar until 2005.'
+192,'Sorrenti',6,1977,58,NULL
+193,'Skerry',6,1984,58,NULL
+194,'Rosenthal',5,1990,58,NULL
+195,'Mellili',2,1996,59,NULL
+196,'Eggelston',3,1990,59,NULL
+197,'Serrong',2,1997,59,NULL
+198,'Sears',2,1989,59,NULL
+199,'Marzalla',4,1971,59,NULL
+200,'Skerry',2,1978,59,NULL
+201,'Keisling',6,1982,60,NULL
+202,'Galti',4,1996,60,NULL
+203,'Sorrenti',5,1987,60,NULL
+204,'Keisling',5,1998,60,NULL
+205,'Triskit',6,1985,60,NULL
+206,'Stribling',5,1980,61,NULL
+207,'Galti',5,1973,61,NULL
+208,'Woodburne',3,1971,61,NULL
+209,'Stribling',5,1975,62,NULL
+210,'Mockridge',6,1984,62,NULL
+211,'Belcombe',3,1987,62,NULL
+212,'Morfooney',6,1998,62,NULL
+213,'Titshall',6,1974,62,NULL
+214,'Dimitria',6,1977,63,NULL
+215,'Eggelston',6,1998,63,NULL
+216,'Taggendharf',3,1993,63,NULL
+217,'Taggendharf',5,1972,63,NULL
+218,'Mettaxus',6,1975,63,NULL
+219,'Lombardi',3,1992,64,NULL
+220,'Mellili',6,1991,64,NULL
+221,'Leramonth',3,1994,64,NULL
+222,'Serrong',5,1981,64,NULL
+223,'Dimitria',5,1970,64,NULL
+224,'Mockridge',2,1976,64,NULL
+225,'Chemnis',2,1995,65,NULL
+226,'Mellaseca',4,1991,65,NULL
+227,'Sears',6,1989,65,NULL
+228,'Woodburne',5,1982,65,NULL
+229,'Triskit',6,1977,66,NULL
+230,'Nancarral',2,1988,66,NULL
+231,'Chemnis',6,1995,67,'This richly flavoured, soft and succulent drink is surely one of the best dry red buys around. Crafted by master South Australian winemaker John Petersen, this is a serious wine thats a great accompaniment for veal dishes.'
+232,'Stribling',3,1997,67,NULL
+233,'Marzalla',6,1977,67,NULL
+234,'Dalion',5,1988,67,NULL
+235,'Mockridge',3,1986,68,NULL
+236,'Chester',3,1982,68,NULL
+237,'Kinsala',6,1989,68,NULL
+238,'Mockridge',2,1982,68,NULL
+239,'Sorrenti',5,1987,68,NULL
+240,'Tonkin',5,1973,69,NULL
+241,'Woodburne',5,1973,69,NULL
+242,'Chemnis',5,1984,69,NULL
+243,'Dalion',3,1998,69,NULL
+244,'Triskit',5,1999,70,NULL
+245,'Holdenson',6,1999,70,NULL
+246,'Krennan',6,1972,70,NULL
+247,'Titshall',3,1977,70,NULL
+248,'Leramonth',3,1993,71,NULL
+249,'Skerry',6,1974,71,NULL
+250,'Mellili',4,1981,71,NULL
+251,'Skerry',2,1998,71,NULL
+252,'Lombardi',6,1972,71,NULL
+253,'Nancarral',3,1994,72,NULL
+254,'Stribling',6,1978,72,NULL
+255,'Ritterman',6,1979,72,NULL
+256,'Dalion',2,1982,72,NULL
+257,'Mettaxus',6,1980,72,NULL
+258,'Sears',2,1996,72,NULL
+259,'Kinsala',2,1995,73,NULL
+260,'Woodestock',6,1990,74,NULL
+261,'Woodestock',6,1996,74,NULL
+262,'Mellaseca',2,1987,74,NULL
+263,'Ruscina',5,1974,74,NULL
+264,'Chemnis',2,1996,74,NULL
+265,'Sorrenti',2,1990,75,NULL
+266,'Ritterman',5,1998,75,NULL
+267,'Belcombe',5,1988,75,NULL
+268,'Morfooney',4,1976,75,NULL
+269,'Titshall',3,1988,75,NULL
+270,'Titshall',2,1975,75,NULL
+271,'Holdenson',3,1976,76,NULL
+272,'Morfooney',5,1977,76,NULL
+273,'Cassisi',2,1989,76,NULL
+274,'Barneshaw',3,1973,76,NULL
+275,'Chester',6,1970,76,NULL
+276,'Barneshaw',5,1971,77,NULL
+277,'Chemnis',5,1975,77,NULL
+278,'Florenini',4,1993,78,NULL
+279,'Kinsala',3,1974,78,NULL
+280,'Mettaxus',3,1971,79,NULL
+281,'Chemnis',3,1990,80,NULL
+282,'Kinsala',3,1982,80,NULL
+283,'Krennan',2,1994,80,NULL
+284,'Woodestock',2,1985,80,NULL
+285,'Skerry',4,1997,80,NULL
+286,'Holdenson',2,1993,80,NULL
+287,'Holdenson',5,1987,81,NULL
+288,'Rosenthal',6,1971,81,NULL
+289,'Cassisi',3,1973,81,NULL
+290,'Ritterman',2,1978,81,NULL
+291,'Kinsala',2,1992,81,NULL
+292,'Mockridge',2,1987,82,NULL
+293,'Mellaseca',5,1988,83,NULL
+294,'Stribling',4,1984,83,NULL
+295,'Pattendon',5,1992,83,NULL
+296,'Archibald',6,1978,83,NULL
+297,'Dimitria',4,1984,84,NULL
+298,'Archibald',4,1994,84,NULL
+299,'Belcombe',5,1976,84,NULL
+300,'Triskit',5,1976,85,NULL
+301,'Chemnis',3,1982,85,NULL
+302,'Cassisi',3,1978,85,NULL
+303,'Woodburne',2,1974,85,NULL
+304,'Skerry',4,1993,85,NULL
+305,'Skerry',3,1999,86,NULL
+306,'Nancarral',6,1973,86,NULL
+307,'Dalion',5,1970,87,NULL
+308,'Sears',5,1984,87,NULL
+309,'Chemnis',6,1973,87,NULL
+310,'Pattendon',3,1973,87,NULL
+311,'Taggendharf',5,1979,88,NULL
+312,'Patton',5,1986,88,NULL
+313,'Belcombe',3,1979,88,NULL
+314,'Triskit',6,1971,88,NULL
+315,'Stribling',6,1973,88,NULL
+316,'Tonkin',3,1986,88,NULL
+317,'Mellili',5,1985,89,NULL
+318,'Krennan',5,1970,90,NULL
+319,'Cassisi',2,1986,90,NULL
+320,'Rosenthal',6,1987,91,NULL
+321,'Patton',6,1981,91,NULL
+322,'Sears',3,1987,92,NULL
+323,'Ritterman',5,1990,92,NULL
+324,'Archibald',6,1988,92,NULL
+325,'Rosenthal',2,1977,93,NULL
+326,'Chester',2,1987,93,NULL
+327,'Mellili',2,1997,93,NULL
+328,'Galti',6,1974,93,NULL
+329,'Lombardi',6,1978,94,NULL
+330,'Barneshaw',5,1975,94,NULL
+331,'Krennan',2,1978,94,NULL
+332,'Rosenthal',4,1997,94,NULL
+333,'Skerry',3,1984,94,NULL
+334,'Pattendon',6,1986,95,NULL
+335,'Dimitria',5,1988,95,NULL
+336,'Marzalla',6,1974,96,NULL
+337,'Morfooney',2,1977,96,NULL
+338,'Titshall',3,1977,97,NULL
+339,'Mockridge',5,1971,97,NULL
+340,'Belcombe',2,1986,97,NULL
+341,'Lombardi',2,1988,97,NULL
+342,'Mockridge',5,1971,97,NULL
+343,'Mellaseca',2,1982,98,NULL
+344,'Mellili',3,1972,98,NULL
+345,'Archibald',3,1998,98,NULL
+346,'Mockridge',6,1980,98,NULL
+347,'Belcombe',5,1990,98,NULL
+348,'Barneshaw',6,1996,99,NULL
+349,'Mellili',4,1996,100,NULL
+350,'Taggendharf',2,1999,101,NULL
+351,'Mettaxus',2,1984,101,NULL
+352,'Sorrenti',3,1992,101,NULL
+353,'Dalion',3,1981,101,NULL
+354,'Titshall',4,1990,101,NULL
+355,'Mellili',5,1991,102,NULL
+356,'Chemnis',2,1985,103,NULL
+357,'Florenini',6,1979,103,NULL
+358,'Woodburne',5,1970,104,NULL
+359,'Mellili',6,1988,104,NULL
+360,'Mettaxus',6,1993,104,NULL
+361,'Keisling',2,1984,105,NULL
+362,'Eggelston',6,1975,105,NULL
+363,'Taggendharf',4,1984,105,NULL
+364,'Patton',4,1989,106,NULL
+365,'Mettaxus',5,1996,106,NULL
+366,'Archibald',6,1989,106,NULL
+367,'Morfooney',5,1985,107,NULL
+368,'Titshall',5,1984,108,NULL
+369,'Ritterman',4,1993,108,NULL
+370,'Leramonth',2,1999,108,NULL
+371,'Mockridge',5,1990,108,NULL
+372,'Woodestock',3,1976,109,NULL
+373,'Sorrenti',4,1983,109,NULL
+374,'Chester',5,1989,109,NULL
+375,'Holdenson',5,1995,109,NULL
+376,'Lombardi',5,1992,109,NULL
+377,'Galti',5,1996,110,NULL
+378,'Galti',3,1973,110,NULL
+379,'Mettaxus',2,1974,110,NULL
+380,'Ruscina',2,1995,110,NULL
+381,'Galti',6,1982,110,'Sorry, but you shouldnt really be able to get this much flavour from a wine this cheap. Then again, if you can, why complain? Theres heaps of attractive fresh grapey fruit flavour and ever-so-slightly sweet grape-pulpy juiciness. Just drink it. Dont question the price.'
+382,'Ruscina',2,1970,110,NULL
+383,'Titshall',3,1982,111,NULL
+384,'Taggendharf',6,1992,111,NULL
+385,'Woodburne',4,1982,112,NULL
+386,'Belcombe',5,1986,112,NULL
+387,'Galti',4,1974,112,NULL
+388,'Sorrenti',6,1991,112,NULL
+389,'Mellili',6,1999,112,NULL
+390,'Woodburne',6,1978,112,NULL
+391,'Cassisi',3,1970,113,NULL
+392,'Ritterman',5,1986,113,NULL
+393,'Holdenson',4,1993,113,NULL
+394,'Stribling',5,1995,113,NULL
+395,'Eggelston',5,1997,113,NULL
+396,'Marzalla',6,1973,113,NULL
+397,'Holdenson',2,1990,114,NULL
+398,'Stribling',5,1992,114,NULL
+399,'Sears',5,1981,114,NULL
+400,'Ritterman',3,1985,114,NULL
+401,'Serrong',6,1995,115,NULL
+402,'Rosenthal',5,1996,115,NULL
+403,'Kinsala',2,1997,115,NULL
+404,'Holdenson',3,1980,115,NULL
+405,'Woodestock',6,1981,116,NULL
+406,'Florenini',6,1995,117,NULL
+407,'Dimitria',4,1993,118,NULL
+408,'Triskit',2,1976,119,NULL
+409,'Sorrenti',2,1999,119,NULL
+410,'Sears',6,1971,119,NULL
+411,'Kinsala',6,1975,119,NULL
+412,'Skerry',2,1977,119,NULL
+413,'Morfooney',3,1970,119,NULL
+414,'Morfooney',5,1976,120,NULL
+415,'Dalion',6,1987,120,NULL
+416,'Kinsala',6,1995,120,NULL
+417,'Eggelston',6,1993,120,NULL
+418,'Galti',4,1988,121,NULL
+419,'Archibald',2,1982,121,NULL
+420,'Triskit',5,1970,122,NULL
+421,'Sorrenti',5,1980,122,NULL
+422,'Leramonth',6,1990,122,NULL
+423,'Skerry',4,1977,122,NULL
+424,'Lombardi',6,1997,122,NULL
+425,'Woodestock',3,1976,122,NULL
+426,'Holdenson',6,1970,123,NULL
+427,'Holdenson',5,1997,123,NULL
+428,'Nancarral',4,1998,123,NULL
+429,'Rosenthal',5,1986,123,NULL
+430,'Belcombe',6,1975,124,NULL
+431,'Marzalla',2,1977,124,NULL
+432,'Leramonth',5,1988,124,NULL
+433,'Rosenthal',2,1987,124,NULL
+434,'Triskit',6,1972,124,NULL
+435,'Patton',5,1979,124,NULL
+436,'Holdenson',2,1974,125,NULL
+437,'Mockridge',3,1985,125,NULL
+438,'Pattendon',6,1973,125,NULL
+439,'Kinsala',6,1975,125,NULL
+440,'Pattendon',5,1978,125,NULL
+441,'Pattendon',5,1997,125,NULL
+442,'Cassisi',5,1974,126,NULL
+443,'Ritterman',6,1975,126,NULL
+444,'Barneshaw',6,1978,127,NULL
+445,'Mellaseca',3,1970,127,NULL
+446,'Skerry',3,1984,127,NULL
+447,'Dalion',2,1979,128,NULL
+448,'Pattendon',2,1996,129,NULL
+449,'Ruscina',6,1972,129,NULL
+450,'Skerry',4,1977,130,NULL
+451,'Woodburne',6,1980,131,NULL
+452,'Tonnibrook',4,1971,131,NULL
+453,'Skerry',3,1998,131,NULL
+454,'Mellili',5,1974,131,NULL
+455,'Pattendon',5,1993,131,NULL
+456,'Triskit',2,1982,131,NULL
+457,'Sears',5,1985,132,NULL
+458,'Woodburne',2,1998,132,NULL
+459,'Ruscina',6,1997,132,NULL
+460,'Holdenson',5,1986,132,NULL
+461,'Holdenson',3,1999,132,NULL
+462,'Taggendharf',2,1978,133,NULL
+463,'Woodestock',6,1987,133,NULL
+464,'Holdenson',3,1982,134,NULL
+465,'Mettaxus',6,1983,134,NULL
+466,'Mettaxus',5,1985,134,NULL
+467,'Ruscina',2,1991,134,NULL
+468,'Archibald',6,1984,134,NULL
+469,'Holdenson',4,1972,135,NULL
+470,'Tonkin',5,1976,135,NULL
+471,'Mellili',5,1991,135,NULL
+472,'Cassisi',5,1984,136,NULL
+473,'Triskit',6,1985,137,NULL
+474,'Florenini',4,1975,137,NULL
+475,'Archibald',2,1986,137,NULL
+476,'Dalion',6,1999,137,NULL
+477,'Mellaseca',5,1971,138,NULL
+478,'Archibald',3,1994,138,NULL
+479,'Titshall',6,1985,138,NULL
+480,'Woodburne',6,1998,139,NULL
+481,'Barneshaw',3,1976,139,NULL
+482,'Stribling',4,1987,139,NULL
+483,'Taggendharf',3,1972,139,NULL
+484,'Mellaseca',6,1972,139,NULL
+485,'Stribling',5,1996,140,NULL
+486,'Triskit',5,1997,140,NULL
+487,'Dalion',6,1980,141,NULL
+488,'Patton',5,1978,141,NULL
+489,'Sears',5,1974,141,NULL
+490,'Oaton',3,1986,141,NULL
+491,'Mellaseca',4,1997,142,NULL
+492,'Belcombe',2,1975,142,NULL
+493,'Taggendharf',5,1992,142,NULL
+494,'Ruscina',3,1981,142,NULL
+495,'Triskit',5,1971,142,NULL
+496,'Tonkin',4,1979,142,NULL
+497,'Woodburne',4,1985,143,NULL
+498,'Leramonth',3,1981,143,NULL
+499,'Rosenthal',6,1979,144,NULL
+500,'Nancarral',3,1998,144,NULL
+501,'Taggendharf',6,1980,144,NULL
+502,'Nancarral',3,1981,144,NULL
+503,'Sorrenti',6,1973,145,NULL
+504,'Chemnis',2,1990,145,NULL
+505,'Galti',6,1986,145,NULL
+506,'Stribling',5,1982,145,NULL
+507,'Keisling',5,1975,145,NULL
+508,'Chester',2,1996,146,NULL
+509,'Archibald',6,1987,146,NULL
+510,'Mellaseca',6,1976,146,NULL
+511,'Woodburne',3,1986,147,NULL
+512,'Taggendharf',2,1972,147,NULL
+513,'Mockridge',5,1997,147,NULL
+514,'Mettaxus',2,1985,147,NULL
+515,'Sorrenti',6,1985,147,NULL
+516,'Eggelston',2,1973,148,NULL
+517,'Tonnibrook',6,1987,148,NULL
+518,'Tonkin',5,1989,149,NULL
+519,'Chemnis',5,1991,149,NULL
+520,'Mockridge',6,1980,149,NULL
+521,'Woodestock',5,1980,149,NULL
+522,'Marzalla',3,1977,149,NULL
+523,'Titshall',2,1988,150,NULL
+524,'Mellaseca',5,1982,150,NULL
+525,'Krennan',2,1978,151,NULL
+526,'Cassisi',6,1989,151,NULL
+527,'Dalion',6,1992,151,NULL
+528,'Sorrenti',6,1992,151,NULL
+529,'Pattendon',6,1994,152,NULL
+530,'Mellaseca',6,1991,152,NULL
+531,'Belcombe',6,1975,152,NULL
+532,'Sorrenti',6,1984,152,NULL
+533,'Kinsala',5,1984,152,NULL
+534,'Woodburne',6,1986,153,NULL
+535,'Sears',3,1975,153,NULL
+536,'Woodburne',2,1971,153,NULL
+537,'Archibald',6,1987,153,NULL
+538,'Ritterman',2,1981,154,NULL
+539,'Galti',3,1991,155,NULL
+540,'Triskit',4,1983,155,NULL
+541,'Leramonth',5,1983,155,NULL
+542,'Oaton',5,1985,155,NULL
+543,'Florenini',2,1975,155,NULL
+544,'Krennan',5,1988,155,NULL
+545,'Lombardi',5,1976,156,NULL
+546,'Ritterman',6,1981,156,NULL
+547,'Archibald',5,1971,156,NULL
+548,'Nancarral',3,1992,156,NULL
+549,'Lombardi',4,1970,156,NULL
+550,'Skerry',6,1999,157,NULL
+551,'Marzalla',2,1981,157,NULL
+552,'Titshall',5,1983,158,NULL
+553,'Patton',5,1992,158,NULL
+554,'Mellili',3,1997,159,NULL
+555,'Pattendon',2,1979,159,NULL
+556,'Mettaxus',6,1983,159,NULL
+557,'Marzalla',6,1986,159,NULL
+558,'Ritterman',5,1998,160,NULL
+559,'Woodburne',2,1970,160,NULL
+560,'Kinsala',6,1996,160,NULL
+561,'Galti',2,1972,160,NULL
+562,'Marzalla',2,1973,161,NULL
+563,'Ruscina',2,1988,161,NULL
+564,'Dalion',5,1998,161,NULL
+565,'Morfooney',6,1982,162,NULL
+566,'Leramonth',6,1987,162,NULL
+567,'Woodburne',6,1989,162,NULL
+568,'Galti',5,1998,162,NULL
+569,'Woodestock',3,1999,162,NULL
+570,'Morfooney',4,1977,163,NULL
+571,'Taggendharf',6,1991,163,NULL
+572,'Leramonth',5,1970,163,NULL
+573,'Dimitria',3,1991,163,NULL
+574,'Titshall',5,1978,163,NULL
+575,'Mockridge',3,1981,163,NULL
+576,'Keisling',2,1999,164,NULL
+577,'Mellili',2,1980,165,NULL
+578,'Ruscina',5,1982,165,NULL
+579,'Skerry',6,1977,165,NULL
+580,'Cassisi',3,1996,165,NULL
+581,'Oaton',5,1994,165,NULL
+582,'Mockridge',2,1985,166,NULL
+583,'Mellaseca',5,1992,166,NULL
+584,'Galti',4,1996,166,NULL
+585,'Ruscina',3,1994,167,NULL
+586,'Tonkin',2,1998,167,NULL
+587,'Mellaseca',6,1997,167,NULL
+588,'Mettaxus',6,1982,167,NULL
+589,'Patton',6,1974,168,NULL
+590,'Dalion',3,1978,168,NULL
+591,'Ritterman',5,1983,169,NULL
+592,'Holdenson',5,1982,169,NULL
+593,'Mellaseca',2,1999,169,NULL
+594,'Woodburne',3,1979,169,NULL
+595,'Stribling',3,1979,170,NULL
+596,'Barneshaw',5,1997,170,NULL
+597,'Dimitria',3,1988,170,NULL
+598,'Kinsala',5,1980,170,NULL
+599,'Tonkin',2,1979,170,NULL
+600,'Woodburne',5,1984,171,NULL
+601,'Mockridge',5,1988,171,NULL
+602,'Patton',5,1973,171,NULL
+603,'Krennan',3,1994,171,NULL
+604,'Nancarral',5,1986,171,NULL
+605,'Holdenson',2,1997,171,NULL
+606,'Chester',5,1974,172,NULL
+607,'Woodburne',6,1989,172,NULL
+608,'Triskit',5,1999,172,NULL
+609,'Mettaxus',6,1983,172,NULL
+610,'Ruscina',6,1993,172,NULL
+611,'Pattendon',5,1987,172,NULL
+612,'Barneshaw',6,1991,173,NULL
+613,'Oaton',3,1972,174,NULL
+614,'Ruscina',4,1987,174,NULL
+615,'Woodburne',2,1984,175,NULL
+616,'Mockridge',3,1986,175,NULL
+617,'Holdenson',6,1985,175,NULL
+618,'Mellaseca',3,1982,175,NULL
+619,'Triskit',3,1990,176,NULL
+620,'Titshall',5,1983,176,NULL
+621,'Woodestock',6,1995,176,NULL
+622,'Barneshaw',5,1991,176,NULL
+623,'Mettaxus',3,1976,176,NULL
+624,'Morfooney',6,1999,176,'The wine is a deep crimson colour with aromas of ripe crushed berries and plums as well as spicy vanillin oak. The palate delivers layers of strong flavours of ripe plum and berries built around a robust structure of firm oak and silky tannins. The cellaring potential of this wine is 15-25 years. This wine is suited to richly flavoured red meat and game dishes.'
+625,'Eggelston',3,1982,177,NULL
+626,'Mellaseca',6,1983,178,NULL
+627,'Archibald',4,1987,178,NULL
+628,'Barneshaw',5,1995,179,NULL
+629,'Barneshaw',3,1991,179,NULL
+630,'Dimitria',5,1983,179,NULL
+631,'Ruscina',6,1972,180,NULL
+632,'Skerry',2,1978,180,NULL
+633,'Sorrenti',3,1993,180,NULL
+634,'Patton',2,1970,180,NULL
+635,'Sears',5,1978,180,NULL
+636,'Serrong',6,1973,181,NULL
+637,'Barneshaw',4,1987,181,NULL
+638,'Florenini',5,1995,181,NULL
+639,'Lombardi',2,1980,181,NULL
+640,'Marzalla',4,1986,181,NULL
+641,'Chemnis',4,1980,181,NULL
+642,'Stribling',2,1998,182,NULL
+643,'Ruscina',2,1977,182,NULL
+644,'Florenini',4,1982,182,NULL
+645,'Kinsala',3,1974,182,NULL
+646,'Morfooney',4,1981,183,NULL
+647,'Tonkin',2,1982,183,NULL
+648,'Mockridge',4,1970,183,NULL
+649,'Titshall',4,1992,184,NULL
+650,'Skerry',4,1990,184,NULL
+651,'Kinsala',4,1982,184,NULL
+652,'Sorrenti',5,1998,185,NULL
+653,'Ritterman',3,1985,185,NULL
+654,'Tonkin',5,1989,185,NULL
+655,'Rosenthal',2,1977,186,NULL
+656,'Titshall',3,1999,186,NULL
+657,'Oaton',5,1972,186,NULL
+658,'Krennan',5,1981,186,NULL
+659,'Patton',5,1985,187,NULL
+660,'Mockridge',6,1970,187,NULL
+661,'Mellili',2,1998,187,NULL
+662,'Morfooney',5,1987,188,NULL
+663,'Eggelston',4,1989,188,NULL
+664,'Dalion',2,1973,189,NULL
+665,'Mettaxus',3,1994,189,NULL
+666,'Cassisi',6,1972,189,NULL
+667,'Titshall',5,1981,189,NULL
+668,'Mockridge',5,1978,189,NULL
+669,'Galti',6,1981,189,NULL
+670,'Taggendharf',3,1998,190,NULL
+671,'Leramonth',6,1974,190,NULL
+672,'Kinsala',5,1971,190,NULL
+673,'Keisling',6,1980,191,NULL
+674,'Woodburne',2,1997,191,NULL
+675,'Oaton',5,1996,192,NULL
+676,'Pattendon',3,1998,193,NULL
+677,'Keisling',2,1980,193,NULL
+678,'Chester',2,1976,193,NULL
+679,'Leramonth',3,1991,194,NULL
+680,'Tonnibrook',5,1986,194,NULL
+681,'Krennan',5,1989,194,NULL
+682,'Dimitria',2,1981,194,NULL
+683,'Woodburne',5,1980,194,NULL
+684,'Stribling',3,1976,195,NULL
+685,'Belcombe',6,1984,195,NULL
+686,'Krennan',2,1986,195,NULL
+687,'Florenini',2,1990,195,NULL
+688,'Belcombe',6,1977,195,NULL
+689,'Woodestock',5,1998,195,NULL
+690,'Mellili',6,1993,196,NULL
+691,'Mellaseca',3,1987,196,NULL
+692,'Cassisi',4,1997,196,NULL
+693,'Lombardi',5,1982,196,NULL
+694,'Belcombe',5,1993,196,NULL
+695,'Titshall',6,1978,196,NULL
+696,'Mockridge',2,1987,197,NULL
+697,'Pattendon',3,1970,197,NULL
+698,'Stribling',5,1994,197,NULL
+699,'Stribling',6,1995,197,NULL
+700,'Mockridge',5,1978,197,NULL
+701,'Krennan',5,1999,197,NULL
+702,'Tonnibrook',4,1971,198,NULL
+703,'Dimitria',6,1995,198,NULL
+704,'Mettaxus',3,1979,198,NULL
+705,'Tonnibrook',6,1981,198,NULL
+706,'Sears',5,1992,198,NULL
+707,'Dimitria',5,1978,198,NULL
+708,'Kinsala',5,1986,199,NULL
+709,'Dalion',2,1999,199,NULL
+710,'Kinsala',3,1986,199,NULL
+711,'Triskit',5,1992,199,NULL
+712,'Eggelston',6,1996,199,NULL
+713,'Woodestock',5,1989,200,NULL
+714,'Stribling',3,1993,200,NULL
+715,'Archibald',2,1973,200,NULL
+716,'Keisling',6,1973,200,NULL
+717,'Mockridge',5,1980,201,NULL
+718,'Mellaseca',4,1993,201,NULL
+719,'Skerry',5,1992,202,NULL
+720,'Oaton',4,1975,202,NULL
+721,'Chemnis',3,1982,202,NULL
+722,'Oaton',5,1986,202,NULL
+723,'Kinsala',6,1979,202,NULL
+724,'Rosenthal',6,1977,203,NULL
+725,'Mellaseca',2,1976,203,NULL
+726,'Keisling',4,1984,203,NULL
+727,'Oaton',3,1987,203,NULL
+728,'Rosenthal',5,1975,204,NULL
+729,'Chemnis',5,1989,204,NULL
+730,'Krennan',6,1993,204,NULL
+731,'Morfooney',2,1974,204,NULL
+732,'Woodestock',6,1997,204,NULL
+733,'Tonnibrook',6,1977,205,NULL
+734,'Lombardi',5,1995,205,NULL
+735,'Morfooney',3,1998,205,NULL
+736,'Eggelston',6,1989,205,NULL
+737,'Galti',6,1977,206,NULL
+738,'Dimitria',2,1978,206,NULL
+739,'Holdenson',5,1990,206,NULL
+740,'Chester',5,1980,206,NULL
+741,'Mockridge',5,1976,207,NULL
+742,'Titshall',6,1973,207,NULL
+743,'Keisling',2,1999,207,NULL
+744,'Dimitria',4,1989,207,NULL
+745,'Mettaxus',3,1976,208,NULL
+746,'Mockridge',5,1991,208,NULL
+747,'Mellili',6,1991,208,NULL
+748,'Krennan',6,1997,208,NULL
+749,'Galti',5,1990,208,NULL
+750,'Barneshaw',5,1982,209,NULL
+751,'Dalion',4,1976,209,NULL
+752,'Kinsala',2,1987,210,NULL
+753,'Skerry',2,1976,210,NULL
+754,'Sears',2,1973,210,NULL
+755,'Woodestock',6,1974,210,NULL
+756,'Sorrenti',5,1984,211,NULL
+757,'Mettaxus',5,1973,211,NULL
+758,'Pattendon',5,1993,212,NULL
+759,'Marzalla',5,1973,212,NULL
+760,'Nancarral',6,1983,212,NULL
+761,'Leramonth',4,1973,212,NULL
+762,'Cassisi',6,1985,213,NULL
+763,'Woodburne',3,1999,214,NULL
+764,'Kinsala',5,1978,214,NULL
+765,'Morfooney',5,1988,214,NULL
+766,'Skerry',5,1978,214,NULL
+767,'Mockridge',6,1995,214,NULL
+768,'Chester',3,1974,215,NULL
+769,'Ruscina',5,1989,215,NULL
+770,'Lombardi',6,1985,215,NULL
+771,'Sears',5,1982,215,NULL
+772,'Nancarral',4,1992,215,NULL
+773,'Patton',3,1981,215,NULL
+774,'Stribling',6,1983,216,NULL
+775,'Cassisi',2,1975,216,NULL
+776,'Pattendon',2,1993,216,NULL
+777,'Sorrenti',2,1999,217,NULL
+778,'Archibald',4,1993,217,NULL
+779,'Mellaseca',3,1987,218,NULL
+780,'Belcombe',5,1985,218,NULL
+781,'Morfooney',5,1986,218,NULL
+782,'Keisling',5,1987,219,NULL
+783,'Sorrenti',3,1987,219,NULL
+784,'Archibald',6,1993,219,NULL
+785,'Eggelston',5,1987,219,NULL
+786,'Tonnibrook',6,1991,220,NULL
+787,'Serrong',4,1981,221,NULL
+788,'Nancarral',6,1976,221,NULL
+789,'Skerry',3,1999,221,NULL
+790,'Cassisi',5,1972,221,NULL
+791,'Mellili',3,1999,221,NULL
+792,'Chemnis',5,1982,221,NULL
+793,'Galti',2,1999,222,NULL
+794,'Sears',5,1977,222,NULL
+795,'Galti',5,1985,222,NULL
+796,'Marzalla',5,1983,222,NULL
+797,'Cassisi',3,1973,223,NULL
+798,'Serrong',2,1983,223,NULL
+799,'Nancarral',2,1996,223,NULL
+800,'Barneshaw',5,1987,223,NULL
+801,'Archibald',3,1998,224,'Quite a luscious after-dinner drink made from super-ripe pedro grapes. The nose is alive with the smells of butterscotch, honey and caramel and the wine fills the mouth with sweet richness, yet the finish is surprisingly dry. Serve it with dessert or cellar until 2012.'
+802,'Cassisi',5,1996,225,NULL
+803,'Rosenthal',5,1996,226,NULL
+804,'Chemnis',5,1992,226,NULL
+805,'Barneshaw',6,1984,226,NULL
+806,'Belcombe',6,1970,226,NULL
+807,'Woodestock',5,1997,226,NULL
+808,'Rosenthal',5,1982,226,NULL
+809,'Titshall',3,1972,227,NULL
+810,'Kinsala',6,1983,228,NULL
+811,'Dimitria',2,1998,228,NULL
+812,'Woodestock',2,1971,228,NULL
+813,'Belcombe',6,1972,228,NULL
+814,'Morfooney',5,1988,229,NULL
+815,'Mettaxus',3,1994,229,NULL
+816,'Stribling',6,1976,229,NULL
+817,'Taggendharf',5,1996,229,NULL
+818,'Mellili',5,1982,230,NULL
+819,'Chester',5,1983,230,NULL
+820,'Mockridge',4,1976,231,NULL
+821,'Tonnibrook',6,1994,232,NULL
+822,'Mellaseca',3,1989,232,NULL
+823,'Lombardi',2,1999,232,NULL
+824,'Taggendharf',6,1991,233,NULL
+825,'Galti',5,1988,233,NULL
+826,'Woodburne',2,1988,234,NULL
+827,'Sorrenti',3,1970,234,NULL
+828,'Rosenthal',6,1971,235,NULL
+829,'Rosenthal',5,1997,235,NULL
+830,'Dalion',5,1978,236,NULL
+831,'Morfooney',6,1982,236,NULL
+832,'Woodburne',2,1974,236,NULL
+833,'Barneshaw',6,1993,236,NULL
+834,'Barneshaw',2,1972,236,NULL
+835,'Marzalla',3,1972,236,NULL
+836,'Mettaxus',6,1992,237,NULL
+837,'Tonkin',3,1976,238,NULL
+838,'Archibald',5,1985,238,NULL
+839,'Chester',5,1975,239,NULL
+840,'Galti',3,1999,239,NULL
+841,'Sorrenti',2,1996,239,NULL
+842,'Rosenthal',6,1979,239,NULL
+843,'Nancarral',2,1983,240,NULL
+844,'Skerry',5,1978,240,NULL
+845,'Dimitria',6,1992,240,NULL
+846,'Serrong',3,1978,241,NULL
+847,'Barneshaw',5,1970,241,NULL
+848,'Tonnibrook',3,1991,241,NULL
+849,'Krennan',3,1970,241,NULL
+850,'Galti',6,1995,241,NULL
+851,'Mockridge',3,1980,242,NULL
+852,'Barneshaw',6,1981,242,NULL
+853,'Eggelston',5,1983,243,NULL
+854,'Taggendharf',5,1988,243,NULL
+855,'Sorrenti',6,1985,244,NULL
+856,'Pattendon',2,1993,245,NULL
+857,'Barneshaw',4,1976,245,NULL
+858,'Cassisi',6,1981,246,NULL
+859,'Archibald',3,1986,247,NULL
+860,'Dalion',5,1987,247,NULL
+861,'Kinsala',2,1975,247,NULL
+862,'Mettaxus',2,1998,247,NULL
+863,'Skerry',6,1973,247,NULL
+864,'Tonnibrook',6,1994,247,NULL
+865,'Kinsala',5,1987,248,NULL
+866,'Ritterman',5,1980,248,NULL
+867,'Kinsala',5,1978,248,NULL
+868,'Tonnibrook',4,1993,248,NULL
+869,'Mockridge',2,1993,248,NULL
+870,'Kinsala',2,1989,249,NULL
+871,'Sorrenti',5,1995,249,NULL
+872,'Stribling',3,1973,249,NULL
+873,'Ritterman',2,1977,250,NULL
+874,'Sears',6,1987,251,NULL
+875,'Keisling',5,1985,252,NULL
+876,'Chemnis',2,1973,252,NULL
+877,'Sorrenti',4,1983,252,NULL
+878,'Lombardi',5,1989,252,NULL
+879,'Leramonth',2,1986,253,NULL
+880,'Mellaseca',2,1995,254,NULL
+881,'Barneshaw',3,1987,254,NULL
+882,'Nancarral',2,1975,255,NULL
+883,'Dimitria',2,1980,255,NULL
+884,'Patton',6,1993,255,NULL
+885,'Tonkin',6,1997,255,NULL
+886,'Skerry',2,1982,256,NULL
+887,'Sorrenti',6,1978,256,NULL
+888,'Dimitria',5,1985,256,NULL
+889,'Morfooney',5,1988,257,NULL
+890,'Keisling',2,1997,257,NULL
+891,'Serrong',6,1977,257,NULL
+892,'Woodestock',2,1991,257,NULL
+893,'Ritterman',5,1974,257,NULL
+894,'Barneshaw',4,1973,258,NULL
+895,'Galti',6,1981,258,NULL
+896,'Mellili',5,1971,258,NULL
+897,'Patton',2,1997,258,NULL
+898,'Skerry',6,1982,258,NULL
+899,'Chester',2,1991,259,NULL
+900,'Mettaxus',4,1999,259,NULL
+901,'Belcombe',2,1971,259,NULL
+902,'Chemnis',5,1998,259,NULL
+903,'Keisling',2,1982,259,NULL
+904,'Mellaseca',3,1977,260,NULL
+905,'Marzalla',6,1983,260,NULL
+906,'Morfooney',6,1982,260,NULL
+907,'Krennan',5,1991,260,NULL
+908,'Belcombe',3,1989,260,NULL
+909,'Serrong',6,1974,261,NULL
+910,'Dimitria',6,1970,261,NULL
+911,'Krennan',6,1984,261,NULL
+912,'Ruscina',5,1977,261,NULL
+913,'Nancarral',2,1970,261,NULL
+914,'Patton',3,1975,262,NULL
+915,'Florenini',5,1973,263,NULL
+916,'Mellaseca',5,1993,263,NULL
+917,'Keisling',2,1976,263,NULL
+918,'Skerry',3,1980,264,NULL
+919,'Nancarral',6,1997,264,NULL
+920,'Galti',5,1976,264,NULL
+921,'Rosenthal',5,1987,264,NULL
+922,'Leramonth',5,1994,265,NULL
+923,'Kinsala',5,1985,265,NULL
+924,'Barneshaw',6,1973,265,NULL
+925,'Krennan',4,1975,266,NULL
+926,'Patton',5,1996,266,NULL
+927,'Titshall',4,1995,266,NULL
+928,'Kinsala',5,1974,266,NULL
+929,'Eggelston',2,1995,267,NULL
+930,'Florenini',5,1984,267,NULL
+931,'Pattendon',5,1990,267,NULL
+932,'Dimitria',2,1976,267,NULL
+933,'Titshall',2,1971,267,NULL
+934,'Cassisi',6,1978,267,NULL
+935,'Skerry',6,1997,268,NULL
+936,'Ritterman',6,1975,268,NULL
+937,'Mettaxus',5,1983,268,NULL
+938,'Mockridge',5,1972,269,NULL
+939,'Morfooney',2,1974,269,NULL
+940,'Serrong',2,1983,269,NULL
+941,'Tonnibrook',3,1984,270,NULL
+942,'Patton',2,1971,270,NULL
+943,'Woodburne',6,1996,270,NULL
+944,'Nancarral',4,1979,270,NULL
+945,'Mettaxus',6,1983,270,NULL
+946,'Woodburne',5,1975,271,NULL
+947,'Sears',6,1973,271,NULL
+948,'Triskit',6,1995,271,NULL
+949,'Galti',3,1993,271,NULL
+950,'Nancarral',5,1974,271,NULL
+951,'Sorrenti',5,1993,271,NULL
+952,'Tonnibrook',5,1988,272,NULL
+953,'Marzalla',3,1993,272,NULL
+954,'Sears',5,1973,273,NULL
+955,'Dimitria',3,1985,273,NULL
+956,'Marzalla',3,1995,273,NULL
+957,'Ruscina',5,1973,274,NULL
+958,'Serrong',5,1990,274,NULL
+959,'Cassisi',5,1975,274,NULL
+960,'Krennan',2,1996,274,NULL
+961,'Rosenthal',5,1972,275,NULL
+962,'Woodestock',2,1998,275,NULL
+963,'Tonnibrook',6,1983,275,NULL
+964,'Cassisi',6,1978,276,NULL
+965,'Taggendharf',6,1984,276,NULL
+966,'Dalion',2,1997,276,NULL
+967,'Keisling',6,1978,277,NULL
+968,'Mellaseca',5,1978,277,NULL
+969,'Belcombe',3,1999,277,NULL
+970,'Krennan',5,1985,277,NULL
+971,'Ritterman',3,1999,277,NULL
+972,'Sears',5,1989,277,NULL
+973,'Barneshaw',2,1989,278,NULL
+974,'Oaton',5,1972,278,NULL
+975,'Skerry',6,1997,278,NULL
+976,'Galti',5,1974,279,NULL
+977,'Titshall',6,1984,279,NULL
+978,'Stribling',3,1994,279,NULL
+979,'Skerry',2,1981,279,NULL
+980,'Tonkin',6,1998,279,NULL
+981,'Nancarral',5,1993,279,NULL
+982,'Marzalla',2,1987,280,NULL
+983,'Woodestock',3,1998,281,NULL
+984,'Ruscina',2,1977,281,NULL
+985,'Chester',5,1981,281,NULL
+986,'Chester',4,1971,281,NULL
+987,'Sears',6,1977,282,NULL
+988,'Galti',3,1998,282,NULL
+989,'Ruscina',6,1982,282,NULL
+990,'Kinsala',2,1992,283,NULL
+991,'Sorrenti',6,1970,284,NULL
+992,'Cassisi',6,1992,284,NULL
+993,'Patton',5,1981,284,NULL
+994,'Eggelston',5,1977,284,NULL
+995,'Cassisi',5,1975,284,NULL
+996,'Barneshaw',2,1982,285,NULL
+997,'Sorrenti',5,1986,286,NULL
+998,'Mellaseca',6,1995,286,NULL
+999,'Cassisi',5,1985,286,NULL
+1000,'Triskit',6,1993,286,NULL
+1001,'Mellili',5,1991,286,NULL
+1002,'Rosenthal',3,1983,287,NULL
+1003,'Mellili',6,1984,287,NULL
+1004,'Mellaseca',6,1981,288,NULL
+1005,'Mellaseca',3,1990,288,NULL
+1006,'Chemnis',5,1992,288,NULL
+1007,'Chemnis',3,1977,288,NULL
+1008,'Chemnis',5,1985,288,NULL
+1009,'Nancarral',3,1971,289,NULL
+1010,'Tonnibrook',6,1978,289,NULL
+1011,'Triskit',5,1977,289,NULL
+1012,'Galti',6,1999,289,NULL
+1013,'Dimitria',3,1980,289,NULL
+1014,'Cassisi',4,1988,290,NULL
+1015,'Rosenthal',5,1988,290,NULL
+1016,'Chemnis',6,1981,290,NULL
+1017,'Mockridge',6,1987,290,NULL
+1018,'Skerry',2,1998,291,NULL
+1019,'Sorrenti',5,1996,291,NULL
+1020,'Galti',2,1994,291,NULL
+1021,'Chester',5,1971,291,NULL
+1022,'Krennan',3,1995,291,NULL
+1023,'Serrong',6,1975,292,NULL
+1024,'Serrong',5,1983,292,NULL
+1025,'Holdenson',6,1978,292,NULL
+1026,'Sears',6,1986,292,NULL
+1027,'Ruscina',3,1986,293,NULL
+1028,'Pattendon',6,1993,293,NULL
+1029,'Taggendharf',2,1994,293,NULL
+1030,'Mettaxus',5,1997,293,NULL
+1031,'Belcombe',3,1977,293,NULL
+1032,'Tonkin',4,1987,294,NULL
+1033,'Rosenthal',5,1979,294,NULL
+1034,'Taggendharf',2,1978,294,NULL
+1035,'Mellili',3,1989,295,NULL
+1036,'Archibald',5,1997,296,NULL
+1037,'Oaton',6,1985,296,NULL
+1038,'Keisling',2,1989,296,NULL
+1039,'Triskit',2,1989,296,NULL
+1040,'Skerry',2,1975,297,NULL
+1041,'Tonnibrook',2,1984,297,NULL
+1042,'Sears',6,1998,298,NULL
+1043,'Ruscina',6,1974,298,NULL
+1044,'Woodestock',3,1999,298,NULL
+1045,'Tonkin',3,1988,298,NULL
+1046,'Leramonth',6,1972,298,NULL
+1047,'Mettaxus',4,1984,299,NULL
+1048,'Titshall',5,1983,300,NULL
+
+@winery (winery_id/numeric,winery_name/char,region_id/numeric): winery_id
+1,'Hanshaw Estates Winery',2
+2,'De Morton and Sons Wines',5
+3,'Joness Premium Wines',3
+4,'Borg Daze Premium Wines',5
+5,'Binns Group',6
+6,'Davie Brook Vineyard',3
+7,'Eglington Creek Premium Wines',4
+8,'McKay Station Vineyard',4
+9,'Dennis and Sons Wines',5
+10,'Beard Brothers Vineyard',4
+11,'Rowley Brook Group',10
+12,'Borg Creek',10
+13,'Bickley Station',6
+14,'Ryan Estates Premium Wines',7
+15,'Waugh',4
+16,'Rogerson Station Group',9
+17,'Grabowskis Vineyard',10
+18,'Greenfield Brothers',2
+19,'Anderson and Sons Premium Wines',4
+20,'Durham Hill Winery',8
+21,'Parker Station',4
+22,'Durham Brook Group',3
+23,'Buettner Hill',9
+24,'Grabowski Gully Premium Wines',9
+25,'Borg Creek Vineyard',6
+26,'Williamss Wines',7
+27,'Jones Gully Vineyard',2
+28,'Bickley and Sons Premium Wines',5
+29,'Durham Ridge',7
+30,'Rogerson and Sons',3
+31,'Rowley Gully Group',4
+32,'Bell Daze Wines',9
+33,'Lane Gully Premium Wines',5
+34,'Gosk Estates Vineyard',10
+35,'Rowley Brothers Vineyard',8
+36,'Lane Ridge Group',2
+37,'De Morton Wines',7
+38,'Bickley Vineyard',8
+39,'Gosk Ridge Wines',5
+40,'Hayne Creek',8
+41,'Denniss',2
+42,'Ryan Brothers Winery',10
+43,'Rowley Vineyard',10
+44,'Grabowski Brook Winery',8
+45,'Beard Hill Vineyard',9
+46,'Grabowski Station Group',10
+47,'Eglington Ridge Winery',8
+48,'Greenfield Vineyard',9
+49,'Jones and Sons Winery',5
+50,'Anderson Daze Group',3
+51,'Anderson Station Winery',6
+52,'Parker Creek Wines',4
+53,'Denniss Wines',6
+54,'Pearce and Sons Winery',5
+55,'Macdonald Brook Vineyard',7
+56,'Hanshaw Estates',6
+57,'Pearce Daze Vineyard',2
+58,'Anderson and Sons Wines',4
+59,'Rowley Creek',5
+60,'Pearce Creek Wines',5
+61,'Macdonald Estates Vineyard',5
+62,'Doswell Hill Premium Wines',2
+63,'Anderson Daze Wines',7
+64,'Pearce Ridge Wines',10
+65,'Eglington Gully Vineyard',3
+66,'Borg Brothers Group',4
+67,'Doswell Vineyard',7
+68,'Bell Daze Premium Wines',7
+69,'Hanshaw Ridge',8
+70,'Lane Estates Group',3
+71,'Grehan Group',4
+72,'Macdonald and Sons',8
+73,'Hubel Daze Winery',8
+74,'Rowley Gully Wines',7
+75,'Lord Gully Premium Wines',9
+76,'Gosk',10
+77,'Binns Hill',10
+78,'Bickley Daze Group',9
+79,'Durham Station',3
+80,'Eglington Ridge Vineyard',5
+81,'Binns Wines',4
+82,'Grehan Daze',5
+83,'De Morton Vineyard',7
+84,'Williams Estates Group',8
+85,'Ryan Gully Vineyard',9
+86,'Davie Brook Winery',8
+87,'Scallys Group',9
+88,'Pearce Brook Wines',5
+89,'Jones Brook Winery',5
+90,'Lord Daze',7
+91,'De Morton Station Wines',3
+92,'Williams Daze Vineyard',6
+93,'Beard Ridge Premium Wines',2
+94,'Gosk Group',6
+95,'Binns Premium Wines',2
+96,'Scally Gully Wines',5
+97,'Borg Gully Winery',3
+98,'Lanes Vineyard',5
+99,'De Morton and Sons Vineyard',5
+100,'Dennis Brook Group',2
+101,'Bell',5
+102,'Eglington and Sons Vineyard',3
+103,'Jones Creek Wines',10
+104,'Jones Creek Group',5
+105,'Rowley Station',2
+106,'Scally Brothers',9
+107,'Buonopane Estates Wines',4
+108,'Lord Station Vineyard',6
+109,'Macdonald Gully Vineyard',5
+110,'Grehans Vineyard',2
+111,'Dennis and Sons Premium Wines',2
+112,'Buettner Station Vineyard',9
+113,'Buettner Estates',10
+114,'Buettner Creek Wines',4
+115,'Ryan Estates Vineyard',8
+116,'Gosk Creek Premium Wines',9
+117,'Durham Creek',9
+118,'Grehan Brothers Wines',4
+119,'Ryan Hill',9
+120,'Buettner Daze Premium Wines',3
+121,'Ryan Ridge Winery',8
+122,'Borg Hill Premium Wines',9
+123,'Macdonald Brothers Wines',8
+124,'Bickley and Sons Vineyard',3
+125,'Gosk Brothers Group',5
+126,'Falconer Brook Vineyard',9
+127,'Falconers Vineyard',2
+128,'Hanshaw Brothers Group',10
+129,'Bickley Estates Wines',10
+130,'Lord Vineyard',2
+131,'Grabowski Ridge',6
+132,'Grabowski Brothers',3
+133,'Buonopane Vineyard',2
+134,'Bickley Brothers',7
+135,'Dennis Hill Vineyard',6
+136,'Scally Station Premium Wines',2
+137,'Greenfields Group',4
+138,'Greenfield Ridge Premium Wines',9
+139,'Greenfield Wines',5
+140,'Greenfield Group',5
+141,'Rowley Estates Vineyard',9
+142,'Doswell Daze Wines',4
+143,'Lane Creek Premium Wines',5
+144,'Buonopane Brothers Wines',5
+145,'Rogerson Ridge',8
+146,'Bickley Gully',3
+147,'Borg Premium Wines',5
+148,'Grabowski Vineyard',7
+149,'Buettner',2
+150,'Ryan Daze Winery',3
+151,'Buonopane Creek Winery',9
+152,'Pearce Estates Winery',8
+153,'De Morton and Sons Winery',4
+154,'Williams Creek Premium Wines',2
+155,'Beard Brothers Premium Wines',10
+156,'Gosk Gully',4
+157,'Durham Ridge Winery',9
+158,'Jones Ridge Wines',5
+159,'Anderson Brothers Group',3
+160,'Hayne Hill Winery',5
+161,'Jones Daze Wines',4
+162,'Williams and Sons Wines',4
+163,'De Morton Creek Winery',2
+164,'Lord Estates Winery',10
+165,'Falconer Daze Premium Wines',2
+166,'Buonopane and Sons Group',8
+167,'Hanshaw Hill',5
+168,'Davie Hill Wines',9
+169,'Greenfield Brothers Winery',3
+170,'Macdonalds Group',7
+171,'Jones Creek',10
+172,'Grabowski Gully Vineyard',10
+173,'Ryan and Sons Group',10
+174,'Hayne Wines',6
+175,'Jones',8
+176,'Binns Hill Vineyard',4
+177,'Greenfield Estates',7
+178,'Greenfield Estates Winery',3
+179,'Korab Estates Premium Wines',5
+180,'Falconer',2
+181,'Andersons Wines',7
+182,'Waugh Ridge Winery',10
+183,'Lord Ridge Vineyard',10
+184,'Lord Daze Vineyard',10
+185,'Rowley Hill Wines',4
+186,'Waugh Gully Vineyard',4
+187,'Korab Hill Vineyard',9
+188,'Lane Wines',6
+189,'Waugh Estates Wines',2
+190,'Borgs',7
+191,'Jones Brook Vineyard',3
+192,'Bickleys',4
+193,'Grehan Ridge Winery',6
+194,'Davie Station Group',5
+195,'De Morton Hill Group',7
+196,'Anderson Creek Group',8
+197,'Waugh Brook Premium Wines',8
+198,'Hayne Brothers Premium Wines',6
+199,'Rogerson Gully Premium Wines',9
+200,'Buettners Premium Wines',2
+201,'Doswell Estates Vineyard',10
+202,'Grehan Creek',5
+203,'Doswell Premium Wines',2
+204,'Rogerson Gully',7
+205,'Parker Station Vineyard',9
+206,'Ryan and Sons Vineyard',2
+207,'Hubel Ridge Winery',3
+208,'Grehan Station Vineyard',4
+209,'Borg Brook Winery',3
+210,'Rogerson Estates Winery',6
+211,'Durham Estates',9
+212,'Rowley Premium Wines',10
+213,'Andersons Winery',10
+214,'Rogersons Group',5
+215,'Doswell Brook',4
+216,'Waugh Gully Wines',4
+217,'Durham and Sons Premium Wines',8
+218,'Scally Daze Vineyard',6
+219,'Gosk and Sons Wines',2
+220,'Eglington Winery',7
+221,'Bickley Hill Winery',5
+222,'McKay and Sons Group',7
+223,'Hanshaw Station Vineyard',7
+224,'Macdonald Hill Wines',3
+225,'Scally Gully',4
+226,'Grehan Gully',6
+227,'Scally Winery',3
+228,'Rowley Ridge Winery',9
+229,'Hayne Daze Group',6
+230,'Durham Premium Wines',3
+231,'Beard and Sons Vineyard',4
+232,'Hanshaw and Sons',7
+233,'Doswell Estates Premium Wines',8
+234,'Rowley Ridge Group',7
+235,'Parker Brothers Winery',7
+236,'Hayne Station Group',10
+237,'McKay Ridge Winery',9
+238,'Scally Hill Vineyard',6
+239,'Anderson Ridge Wines',6
+240,'Haynes Premium Wines',8
+241,'Andersons Group',3
+242,'Lords Winery',7
+243,'Macdonald Hill Vineyard',9
+244,'Lord Ridge',4
+245,'Binns Station Group',5
+246,'McKay Ridge Group',10
+247,'Durham Hill Vineyard',5
+248,'Buettner Daze Winery',10
+249,'Hayne Vineyard',10
+250,'Rogerson Estates Wines',2
+251,'Davie Hill Premium Wines',3
+252,'Grehans Group',2
+253,'McKay and Sons',2
+254,'Borg and Sons',8
+255,'Grabowski and Sons Wines',6
+256,'Davie Brook Group',9
+257,'Waugh Creek',5
+258,'Bell Winery',8
+259,'Gosk Winery',7
+260,'Dennis Winery',9
+261,'Williams Brothers Vineyard',3
+262,'Rowley Creek Winery',2
+263,'Rogerson and Sons Winery',4
+264,'Bickley Ridge Winery',5
+265,'Binns Creek Premium Wines',5
+266,'Rogerson Hill Group',4
+267,'Rowley Daze Premium Wines',3
+268,'Borg Gully',6
+269,'Macdonald Ridge Vineyard',10
+270,'Dennis Gully Wines',3
+271,'Borg Brothers',4
+272,'Pearce Ridge Premium Wines',7
+273,'Binns Daze Premium Wines',4
+274,'Scally Brothers Group',8
+275,'Waugh Brothers Vineyard',10
+276,'Lane Hill Wines',3
+277,'Williams Creek Group',4
+278,'Korab Estates Winery',6
+279,'Anderson Daze Vineyard',9
+280,'Doswell Gully Winery',8
+281,'Williams Brook Premium Wines',7
+282,'Beard Daze Winery',9
+283,'Hubels',9
+284,'Parker Hill Premium Wines',5
+285,'Eglington Vineyard',2
+286,'Grabowski Estates Winery',8
+287,'Buonopane Brook Winery',6
+288,'Rogersons Winery',7
+289,'Greenfield Brothers Wines',2
+290,'Durham',2
+291,'Korab Station Wines',8
+292,'De Morton Gully Vineyard',6
+293,'Pearce Winery',7
+294,'McKay Daze Vineyard',9
+295,'Doswell Gully Wines',9
+296,'Jones Estates',9
+297,'Ryan',5
+298,'Rowley Brook Winery',3
+299,'Grabowski Creek Vineyard',10
+300,'Ryan Estates Group',3
+
+@wine_type(wine_type_id/numeric,wine_type/char): wine_type_id
+1, 'All'
+2, 'Sparkling'
+3, 'Fortified'
+4, 'Sweet'
+5, 'White'
+6, 'Red'
+
+@wine_variety (wine_id/numeric, variety_id/numeric,id/numeric): wine_id,variety_id
+1,19,1
+1,20,2
+2,16,1
+3,14,1
+4,18,1
+5,5,1
+5,3,2
+5,4,3
+6,12,1
+6,11,2
+7,6,1
+7,7,2
+8,14,1
+9,16,1
+10,2,1
+11,18,1
+12,11,1
+12,13,2
+13,19,1
+13,21,2
+14,2,1
+15,15,1
+16,17,1
+17,3,1
+17,4,2
+18,1,1
+19,14,1
+20,18,1
+21,15,1
+22,16,1
+23,14,1
+24,17,1
+25,5,1
+26,9,1
+27,13,1
+28,11,1
+28,3,2
+29,19,1
+29,20,2
+30,6,1
+30,7,2
+31,11,1
+31,13,2
+32,11,1
+32,3,2
+33,18,1
+34,14,1
+35,14,1
+36,18,1
+37,13,1
+38,12,1
+38,11,2
+39,16,1
+40,5,1
+40,3,2
+40,4,3
+41,11,1
+41,13,2
+42,17,1
+43,6,1
+43,10,2
+44,14,1
+45,16,1
+46,16,1
+47,12,1
+47,11,2
+47,13,3
+48,17,1
+49,16,1
+50,1,1
+51,14,1
+52,12,1
+52,11,2
+53,9,1
+54,18,1
+55,17,1
+56,15,1
+57,19,1
+57,20,2
+58,17,1
+59,2,1
+60,12,1
+60,11,2
+61,17,1
+62,9,1
+63,18,1
+64,19,1
+64,21,2
+65,15,1
+66,1,1
+67,15,1
+68,3,1
+68,4,2
+69,12,1
+70,17,1
+71,6,1
+71,7,2
+72,17,1
+73,15,1
+74,5,1
+75,18,1
+76,15,1
+77,14,1
+78,17,1
+79,19,1
+79,21,2
+80,16,1
+81,2,1
+82,5,1
+83,15,1
+84,14,1
+85,5,1
+85,3,2
+85,4,3
+86,12,1
+86,11,2
+87,16,1
+88,19,1
+88,20,2
+89,3,1
+89,4,2
+90,12,1
+90,11,2
+91,12,1
+92,12,1
+92,11,2
+93,12,1
+93,11,2
+93,13,3
+94,3,1
+94,4,2
+95,5,1
+95,3,2
+95,4,3
+96,16,1
+97,5,1
+97,3,2
+97,4,3
+98,11,1
+98,3,2
+99,11,1
+99,3,2
+100,3,1
+100,4,2
+101,9,1
+102,3,1
+102,4,2
+103,19,1
+103,20,2
+104,17,1
+105,5,1
+106,16,1
+107,18,1
+108,6,1
+108,10,2
+109,17,1
+110,11,1
+110,13,2
+111,1,1
+112,11,1
+112,3,2
+113,3,1
+113,4,2
+114,14,1
+115,11,1
+115,3,2
+116,18,1
+117,11,1
+117,3,2
+118,8,1
+119,16,1
+120,16,1
+121,15,1
+122,9,1
+123,19,1
+123,20,2
+124,15,1
+125,15,1
+126,6,1
+126,7,2
+127,19,1
+127,21,2
+128,6,1
+128,10,2
+129,12,1
+129,11,2
+130,19,1
+130,21,2
+131,8,1
+132,14,1
+133,8,1
+134,14,1
+135,5,1
+136,1,1
+137,12,1
+138,19,1
+138,20,2
+139,12,1
+139,11,2
+140,5,1
+140,3,2
+140,4,3
+141,19,1
+141,20,2
+142,12,1
+143,1,1
+144,5,1
+144,3,2
+144,4,3
+145,13,1
+146,3,1
+146,4,2
+147,11,1
+147,13,2
+148,5,1
+148,3,2
+148,4,3
+149,1,1
+150,15,1
+151,1,1
+152,19,1
+152,21,2
+153,8,1
+154,11,1
+154,3,2
+155,3,1
+155,4,2
+156,5,1
+156,3,2
+156,4,3
+157,16,1
+158,11,1
+158,3,2
+159,6,1
+159,7,2
+160,9,1
+161,18,1
+162,19,1
+162,21,2
+163,8,1
+164,19,1
+164,20,2
+165,19,1
+165,21,2
+166,5,1
+166,3,2
+166,4,3
+167,6,1
+167,10,2
+168,9,1
+169,19,1
+169,21,2
+170,19,1
+170,21,2
+171,6,1
+171,10,2
+172,9,1
+173,18,1
+174,5,1
+175,5,1
+175,3,2
+175,4,3
+176,19,1
+176,21,2
+177,1,1
+178,15,1
+179,6,1
+179,10,2
+180,19,1
+180,20,2
+181,2,1
+182,12,1
+182,11,2
+182,13,3
+183,14,1
+184,19,1
+184,20,2
+185,9,1
+186,11,1
+186,13,2
+187,5,1
+188,17,1
+189,14,1
+190,1,1
+191,9,1
+192,11,1
+192,3,2
+193,9,1
+194,1,1
+195,19,1
+195,21,2
+196,15,1
+197,19,1
+197,21,2
+198,18,1
+199,14,1
+200,19,1
+200,21,2
+201,11,1
+201,3,2
+202,14,1
+203,3,1
+203,4,2
+204,5,1
+205,12,1
+205,11,2
+206,3,1
+206,4,2
+207,1,1
+208,16,1
+209,6,1
+209,7,2
+210,12,1
+210,11,2
+211,16,1
+212,11,1
+212,3,2
+213,11,1
+213,13,2
+214,11,1
+214,3,2
+215,9,1
+216,17,1
+217,8,1
+218,6,1
+218,10,2
+219,16,1
+220,6,1
+220,10,2
+221,17,1
+222,2,1
+223,8,1
+224,19,1
+224,20,2
+225,18,1
+226,14,1
+227,12,1
+228,1,1
+229,12,1
+229,11,2
+230,19,1
+230,20,2
+231,6,1
+231,10,2
+232,16,1
+233,11,1
+233,13,2
+234,5,1
+234,3,2
+234,4,3
+235,17,1
+236,17,1
+237,9,1
+238,18,1
+239,3,1
+239,4,2
+240,8,1
+241,3,1
+241,4,2
+242,2,1
+243,16,1
+244,2,1
+245,12,1
+246,9,1
+247,16,1
+248,17,1
+249,11,1
+249,13,2
+250,14,1
+251,19,1
+251,20,2
+252,13,1
+253,16,1
+254,12,1
+255,11,1
+255,13,2
+256,18,1
+257,12,1
+257,11,2
+258,18,1
+259,19,1
+259,20,2
+260,12,1
+261,9,1
+262,18,1
+263,2,1
+264,19,1
+264,20,2
+265,18,1
+266,3,1
+266,4,2
+267,2,1
+268,14,1
+269,15,1
+270,19,1
+270,20,2
+271,16,1
+272,1,1
+273,19,1
+273,21,2
+274,17,1
+275,11,1
+275,13,2
+276,1,1
+277,5,1
+277,3,2
+277,4,3
+278,14,1
+279,15,1
+280,17,1
+281,17,1
+282,17,1
+283,19,1
+283,20,2
+284,19,1
+284,20,2
+285,14,1
+286,19,1
+286,21,2
+287,5,1
+287,3,2
+287,4,3
+288,6,1
+288,10,2
+289,15,1
+290,19,1
+290,21,2
+291,19,1
+291,20,2
+292,18,1
+293,2,1
+294,14,1
+295,8,1
+296,13,1
+297,14,1
+298,14,1
+299,5,1
+300,8,1
+301,15,1
+302,16,1
+303,19,1
+303,20,2
+304,14,1
+305,15,1
+306,6,1
+306,10,2
+307,5,1
+308,8,1
+309,6,1
+309,10,2
+310,17,1
+311,2,1
+312,2,1
+313,17,1
+314,12,1
+314,11,2
+315,12,1
+315,11,2
+316,17,1
+317,6,1
+317,7,2
+318,3,1
+318,4,2
+319,18,1
+320,9,1
+321,11,1
+321,3,2
+322,16,1
+323,2,1
+324,12,1
+325,19,1
+325,21,2
+326,19,1
+326,20,2
+327,19,1
+327,21,2
+328,12,1
+328,11,2
+328,13,3
+329,12,1
+329,11,2
+329,13,3
+330,5,1
+331,19,1
+331,20,2
+332,14,1
+333,17,1
+334,11,1
+334,13,2
+335,8,1
+336,12,1
+337,18,1
+338,15,1
+339,6,1
+339,7,2
+340,18,1
+341,19,1
+341,21,2
+342,5,1
+342,3,2
+342,4,3
+343,18,1
+344,15,1
+345,15,1
+346,9,1
+347,5,1
+348,13,1
+349,14,1
+350,19,1
+350,21,2
+351,18,1
+352,16,1
+353,17,1
+354,14,1
+355,6,1
+355,7,2
+356,19,1
+356,21,2
+357,9,1
+358,5,1
+359,12,1
+360,12,1
+360,11,2
+360,13,3
+361,18,1
+362,12,1
+362,11,2
+363,14,1
+364,14,1
+365,5,1
+365,3,2
+365,4,3
+366,12,1
+366,11,2
+367,5,1
+367,3,2
+367,4,3
+368,5,1
+368,3,2
+368,4,3
+369,14,1
+370,19,1
+370,21,2
+371,8,1
+372,16,1
+373,14,1
+374,5,1
+375,5,1
+375,3,2
+375,4,3
+376,5,1
+377,5,1
+377,3,2
+377,4,3
+378,17,1
+379,19,1
+379,20,2
+380,19,1
+380,21,2
+381,11,1
+381,3,2
+382,18,1
+383,16,1
+384,13,1
+385,14,1
+386,8,1
+387,14,1
+388,12,1
+389,12,1
+389,11,2
+390,11,1
+390,3,2
+391,15,1
+392,5,1
+393,14,1
+394,8,1
+395,5,1
+395,3,2
+395,4,3
+396,11,1
+396,13,2
+397,18,1
+398,1,1
+399,3,1
+399,4,2
+400,15,1
+401,11,1
+401,13,2
+402,8,1
+403,18,1
+404,16,1
+405,6,1
+405,10,2
+406,12,1
+406,11,2
+407,14,1
+408,19,1
+408,21,2
+409,18,1
+410,11,1
+410,3,2
+411,12,1
+411,11,2
+411,13,3
+412,18,1
+413,17,1
+414,5,1
+414,3,2
+414,4,3
+415,6,1
+415,10,2
+416,12,1
+416,11,2
+416,13,3
+417,6,1
+417,10,2
+418,14,1
+419,18,1
+420,5,1
+421,2,1
+422,11,1
+422,13,2
+423,14,1
+424,12,1
+425,15,1
+426,6,1
+426,10,2
+427,8,1
+428,14,1
+429,5,1
+430,11,1
+430,13,2
+431,19,1
+431,21,2
+432,1,1
+433,19,1
+433,20,2
+434,12,1
+434,11,2
+435,6,1
+435,7,2
+436,19,1
+436,21,2
+437,15,1
+438,6,1
+438,10,2
+439,12,1
+440,5,1
+441,2,1
+442,5,1
+443,11,1
+443,13,2
+444,6,1
+444,10,2
+445,17,1
+446,16,1
+447,19,1
+447,20,2
+448,18,1
+449,12,1
+449,11,2
+449,13,3
+450,14,1
+451,12,1
+451,11,2
+452,14,1
+453,16,1
+454,5,1
+455,6,1
+455,7,2
+456,18,1
+457,5,1
+457,3,2
+457,4,3
+458,18,1
+459,9,1
+460,6,1
+460,7,2
+461,16,1
+462,19,1
+462,20,2
+463,11,1
+463,3,2
+464,17,1
+465,9,1
+466,6,1
+466,7,2
+467,19,1
+467,21,2
+468,12,1
+468,11,2
+468,13,3
+469,14,1
+470,3,1
+470,4,2
+471,8,1
+472,5,1
+473,12,1
+473,11,2
+473,13,3
+474,14,1
+475,19,1
+475,20,2
+476,12,1
+477,6,1
+477,7,2
+478,17,1
+479,11,1
+479,3,2
+480,12,1
+480,11,2
+481,17,1
+482,14,1
+483,17,1
+484,11,1
+484,3,2
+485,1,1
+486,2,1
+487,9,1
+488,1,1
+489,2,1
+490,17,1
+491,14,1
+492,18,1
+493,2,1
+494,17,1
+495,6,1
+495,7,2
+496,14,1
+497,14,1
+498,15,1
+499,6,1
+499,10,2
+500,16,1
+501,11,1
+501,13,2
+502,16,1
+503,6,1
+503,10,2
+504,18,1
+505,12,1
+506,6,1
+506,7,2
+507,1,1
+508,19,1
+508,21,2
+509,13,1
+510,12,1
+510,11,2
+510,13,3
+511,16,1
+512,18,1
+513,2,1
+514,18,1
+515,12,1
+516,19,1
+516,20,2
+517,12,1
+518,5,1
+519,2,1
+520,13,1
+521,8,1
+522,17,1
+523,19,1
+523,21,2
+524,1,1
+525,19,1
+525,21,2
+526,12,1
+526,11,2
+527,9,1
+528,11,1
+528,3,2
+529,12,1
+529,11,2
+529,13,3
+530,12,1
+531,11,1
+531,13,2
+532,11,1
+532,3,2
+533,8,1
+534,11,1
+534,3,2
+535,17,1
+536,19,1
+536,21,2
+537,11,1
+537,13,2
+538,19,1
+538,20,2
+539,17,1
+540,14,1
+541,8,1
+542,2,1
+543,18,1
+544,6,1
+544,7,2
+545,5,1
+546,12,1
+546,11,2
+546,13,3
+547,3,1
+547,4,2
+548,16,1
+549,14,1
+550,11,1
+550,3,2
+551,18,1
+552,5,1
+553,6,1
+553,7,2
+554,17,1
+555,19,1
+555,20,2
+556,13,1
+557,11,1
+557,3,2
+558,6,1
+558,7,2
+559,18,1
+560,6,1
+560,10,2
+561,19,1
+561,21,2
+562,18,1
+563,19,1
+563,20,2
+564,2,1
+565,11,1
+565,3,2
+566,6,1
+566,10,2
+567,9,1
+568,2,1
+569,16,1
+570,14,1
+571,12,1
+571,11,2
+571,13,3
+572,3,1
+572,4,2
+573,16,1
+574,2,1
+575,16,1
+576,19,1
+576,21,2
+577,19,1
+577,20,2
+578,8,1
+579,13,1
+580,15,1
+581,8,1
+582,19,1
+582,21,2
+583,2,1
+584,14,1
+585,17,1
+586,18,1
+587,11,1
+587,13,2
+588,11,1
+588,3,2
+589,11,1
+589,3,2
+590,16,1
+591,1,1
+592,3,1
+592,4,2
+593,19,1
+593,21,2
+594,16,1
+595,17,1
+596,6,1
+596,7,2
+597,17,1
+598,2,1
+599,18,1
+600,5,1
+601,3,1
+601,4,2
+602,5,1
+603,15,1
+604,1,1
+605,19,1
+605,21,2
+606,5,1
+607,13,1
+608,6,1
+608,7,2
+609,12,1
+609,11,2
+610,6,1
+610,10,2
+611,5,1
+612,13,1
+613,16,1
+614,14,1
+615,19,1
+615,20,2
+616,17,1
+617,11,1
+617,13,2
+618,17,1
+619,16,1
+620,5,1
+621,12,1
+621,11,2
+621,13,3
+622,3,1
+622,4,2
+623,17,1
+624,11,1
+624,3,2
+625,17,1
+626,11,1
+626,3,2
+627,14,1
+628,6,1
+628,7,2
+629,15,1
+630,5,1
+631,11,1
+631,13,2
+632,18,1
+633,16,1
+634,19,1
+634,21,2
+635,1,1
+636,13,1
+637,14,1
+638,5,1
+639,19,1
+639,21,2
+640,14,1
+641,14,1
+642,19,1
+642,21,2
+643,19,1
+643,21,2
+644,14,1
+645,17,1
+646,14,1
+647,19,1
+647,20,2
+648,14,1
+649,14,1
+650,14,1
+651,14,1
+652,2,1
+653,17,1
+654,1,1
+655,19,1
+655,21,2
+656,15,1
+657,8,1
+658,1,1
+659,6,1
+659,7,2
+660,12,1
+660,11,2
+660,13,3
+661,18,1
+662,8,1
+663,14,1
+664,19,1
+664,21,2
+665,15,1
+666,11,1
+666,3,2
+667,3,1
+667,4,2
+668,1,1
+669,11,1
+669,3,2
+670,16,1
+671,9,1
+672,5,1
+672,3,2
+672,4,3
+673,13,1
+674,19,1
+674,20,2
+675,2,1
+676,17,1
+677,18,1
+678,19,1
+678,20,2
+679,17,1
+680,5,1
+681,1,1
+682,19,1
+682,21,2
+683,8,1
+684,16,1
+685,11,1
+685,13,2
+686,19,1
+686,21,2
+687,19,1
+687,21,2
+688,12,1
+688,11,2
+688,13,3
+689,5,1
+690,9,1
+691,17,1
+692,14,1
+693,5,1
+693,3,2
+693,4,3
+694,8,1
+695,11,1
+695,3,2
+696,18,1
+697,16,1
+698,8,1
+699,6,1
+699,10,2
+700,5,1
+700,3,2
+700,4,3
+701,3,1
+701,4,2
+702,14,1
+703,6,1
+703,10,2
+704,16,1
+705,6,1
+705,10,2
+706,3,1
+706,4,2
+707,8,1
+708,6,1
+708,7,2
+709,19,1
+709,21,2
+710,15,1
+711,8,1
+712,11,1
+712,3,2
+713,5,1
+714,17,1
+715,19,1
+715,21,2
+716,6,1
+716,10,2
+717,1,1
+718,14,1
+719,5,1
+719,3,2
+719,4,3
+720,14,1
+721,17,1
+722,8,1
+723,9,1
+724,11,1
+724,13,2
+725,18,1
+726,14,1
+727,15,1
+728,5,1
+728,3,2
+728,4,3
+729,2,1
+730,9,1
+731,18,1
+732,11,1
+732,3,2
+733,12,1
+734,1,1
+735,15,1
+736,12,1
+737,11,1
+737,3,2
+738,19,1
+738,21,2
+739,5,1
+739,3,2
+739,4,3
+740,8,1
+741,6,1
+741,7,2
+742,9,1
+743,19,1
+743,20,2
+744,14,1
+745,16,1
+746,3,1
+746,4,2
+747,11,1
+747,13,2
+748,11,1
+748,13,2
+749,8,1
+750,6,1
+750,7,2
+751,14,1
+752,19,1
+752,20,2
+753,19,1
+753,21,2
+754,19,1
+754,20,2
+755,12,1
+756,2,1
+757,5,1
+758,8,1
+759,3,1
+759,4,2
+760,13,1
+761,14,1
+762,13,1
+763,17,1
+764,5,1
+765,3,1
+765,4,2
+766,6,1
+766,7,2
+767,12,1
+768,17,1
+769,5,1
+769,3,2
+769,4,3
+770,6,1
+770,10,2
+771,5,1
+771,3,2
+771,4,3
+772,14,1
+773,16,1
+774,11,1
+774,13,2
+775,19,1
+775,20,2
+776,18,1
+777,19,1
+777,21,2
+778,14,1
+779,16,1
+780,2,1
+781,1,1
+782,1,1
+783,17,1
+784,6,1
+784,10,2
+785,6,1
+785,7,2
+786,11,1
+786,13,2
+787,14,1
+788,12,1
+788,11,2
+788,13,3
+789,16,1
+790,6,1
+790,7,2
+791,16,1
+792,2,1
+793,18,1
+794,8,1
+795,8,1
+796,3,1
+796,4,2
+797,17,1
+798,19,1
+798,21,2
+799,19,1
+799,20,2
+800,1,1
+801,15,1
+802,1,1
+803,3,1
+803,4,2
+804,6,1
+804,7,2
+805,13,1
+806,11,1
+806,3,2
+807,1,1
+808,6,1
+808,7,2
+809,15,1
+810,11,1
+810,3,2
+811,19,1
+811,20,2
+812,19,1
+812,20,2
+813,12,1
+813,11,2
+814,5,1
+814,3,2
+814,4,3
+815,16,1
+816,12,1
+817,3,1
+817,4,2
+818,6,1
+818,7,2
+819,1,1
+820,14,1
+821,9,1
+822,15,1
+823,18,1
+824,6,1
+824,10,2
+825,5,1
+826,19,1
+826,21,2
+827,15,1
+828,12,1
+828,11,2
+829,3,1
+829,4,2
+830,8,1
+831,12,1
+831,11,2
+831,13,3
+832,19,1
+832,21,2
+833,11,1
+833,13,2
+834,19,1
+834,20,2
+835,16,1
+836,12,1
+836,11,2
+837,16,1
+838,5,1
+839,3,1
+839,4,2
+840,15,1
+841,19,1
+841,20,2
+842,12,1
+842,11,2
+843,19,1
+843,21,2
+844,2,1
+845,12,1
+845,11,2
+846,17,1
+847,1,1
+848,16,1
+849,15,1
+850,13,1
+851,15,1
+852,13,1
+853,1,1
+854,5,1
+854,3,2
+854,4,3
+855,13,1
+856,18,1
+857,14,1
+858,12,1
+858,11,2
+858,13,3
+859,15,1
+860,8,1
+861,18,1
+862,19,1
+862,21,2
+863,12,1
+863,11,2
+863,13,3
+864,9,1
+865,2,1
+866,5,1
+866,3,2
+866,4,3
+867,3,1
+867,4,2
+868,14,1
+869,18,1
+870,19,1
+870,21,2
+871,2,1
+872,15,1
+873,18,1
+874,12,1
+874,11,2
+874,13,3
+875,3,1
+875,4,2
+876,18,1
+877,14,1
+878,5,1
+878,3,2
+878,4,3
+879,18,1
+880,19,1
+880,20,2
+881,15,1
+882,19,1
+882,21,2
+883,19,1
+883,20,2
+884,12,1
+884,11,2
+885,12,1
+885,11,2
+885,13,3
+886,19,1
+886,20,2
+887,6,1
+887,10,2
+888,2,1
+889,3,1
+889,4,2
+890,18,1
+891,12,1
+891,11,2
+891,13,3
+892,19,1
+892,21,2
+893,5,1
+893,3,2
+893,4,3
+894,14,1
+895,12,1
+895,11,2
+896,1,1
+897,19,1
+897,20,2
+898,11,1
+898,13,2
+899,19,1
+899,20,2
+900,14,1
+901,19,1
+901,21,2
+902,2,1
+903,19,1
+903,21,2
+904,16,1
+905,12,1
+906,12,1
+907,6,1
+907,7,2
+908,17,1
+909,11,1
+909,3,2
+910,11,1
+910,13,2
+911,11,1
+911,13,2
+912,2,1
+913,19,1
+913,21,2
+914,16,1
+915,3,1
+915,4,2
+916,3,1
+916,4,2
+917,18,1
+918,16,1
+919,12,1
+920,8,1
+921,8,1
+922,3,1
+922,4,2
+923,1,1
+924,6,1
+924,10,2
+925,14,1
+926,6,1
+926,7,2
+927,14,1
+928,1,1
+929,19,1
+929,21,2
+930,1,1
+931,8,1
+932,19,1
+932,20,2
+933,19,1
+933,20,2
+934,9,1
+935,13,1
+936,12,1
+936,11,2
+936,13,3
+937,5,1
+937,3,2
+937,4,3
+938,5,1
+939,19,1
+939,20,2
+940,19,1
+940,21,2
+941,17,1
+942,19,1
+942,21,2
+943,12,1
+944,14,1
+945,12,1
+945,11,2
+945,13,3
+946,5,1
+946,3,2
+946,4,3
+947,11,1
+947,13,2
+948,12,1
+948,11,2
+949,15,1
+950,2,1
+951,6,1
+951,7,2
+952,6,1
+952,7,2
+953,15,1
+954,6,1
+954,7,2
+955,16,1
+956,15,1
+957,8,1
+958,8,1
+959,8,1
+960,19,1
+960,21,2
+961,5,1
+962,19,1
+962,21,2
+963,11,1
+963,13,2
+964,12,1
+964,11,2
+964,13,3
+965,12,1
+965,11,2
+966,19,1
+966,20,2
+967,11,1
+967,13,2
+968,5,1
+969,17,1
+970,5,1
+971,17,1
+972,5,1
+973,18,1
+974,1,1
+975,11,1
+975,3,2
+976,5,1
+976,3,2
+976,4,3
+977,12,1
+977,11,2
+978,16,1
+979,19,1
+979,21,2
+980,12,1
+980,11,2
+980,13,3
+981,5,1
+982,19,1
+982,20,2
+983,16,1
+984,19,1
+984,20,2
+985,1,1
+986,14,1
+987,11,1
+987,13,2
+988,17,1
+989,12,1
+990,19,1
+990,21,2
+991,9,1
+992,6,1
+992,10,2
+993,6,1
+993,7,2
+994,8,1
+995,1,1
+996,19,1
+996,20,2
+997,5,1
+998,11,1
+998,13,2
+999,1,1
+1000,12,1
+1001,8,1
+1002,16,1
+1003,9,1
+1004,11,1
+1004,3,2
+1005,17,1
+1006,8,1
+1007,15,1
+1008,3,1
+1008,4,2
+1009,16,1
+1010,12,1
+1010,11,2
+1010,13,3
+1011,1,1
+1012,9,1
+1013,16,1
+1014,14,1
+1015,5,1
+1015,3,2
+1015,4,3
+1016,12,1
+1016,11,2
+1017,12,1
+1018,18,1
+1019,5,1
+1020,19,1
+1020,20,2
+1021,2,1
+1022,15,1
+1023,9,1
+1024,5,1
+1025,12,1
+1025,11,2
+1026,9,1
+1027,16,1
+1028,11,1
+1028,13,2
+1029,19,1
+1029,20,2
+1030,6,1
+1030,7,2
+1031,17,1
+1032,14,1
+1033,8,1
+1034,18,1
+1035,16,1
+1036,2,1
+1037,13,1
+1038,19,1
+1038,20,2
+1039,19,1
+1039,20,2
+1040,18,1
+1041,19,1
+1041,20,2
+1042,12,1
+1042,11,2
+1043,6,1
+1043,10,2
+1044,16,1
+1045,16,1
+1046,6,1
+1046,10,2
+1047,14,1
+1048,5,1
+1048,3,2
+1048,4,3
